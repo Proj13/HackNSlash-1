@@ -92,7 +92,10 @@ public class Player : MonoBehaviour {
 				velocity.y = minJumpVelocity;
 			}
 		}
-		
+
+		if (Input.GetKey (KeyCode.Escape)) {
+			Application.Quit ();
+		}
 		
 		velocity.y += gravity * Time.deltaTime;
 		controller.Move (velocity * Time.deltaTime, input);

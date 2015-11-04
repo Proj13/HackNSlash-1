@@ -6,7 +6,7 @@
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
 	<RootNamespace></RootNamespace>
-	<ProjectGuid>{044D954C-7B8B-70DC-9908-D4876C24DC34}</ProjectGuid>
+	<ProjectGuid>{B5F8FE1E-0FF5-BCF1-F9DA-D398D4842961}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,6 +45,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Player\Animation\Player_anim.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Controller2D.cs" />
      <Compile Include="Assets\Scripts\PlatformController.cs" />
