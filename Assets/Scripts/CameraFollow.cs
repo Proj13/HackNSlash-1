@@ -17,12 +17,17 @@ public class CameraFollow : MonoBehaviour {
 	float lookAheadDirX;
 	float smoothLookVelocityX;
 	float smoothVelocityY;
+	float timeLeft = 60.0f;
 	
 	bool lookAheadStopped;
 	
 	void Start() {
 		focusArea = new FocusArea (target.collider.bounds, focusAreaSize);
 	}
+
+
+
+
 	
 	void LateUpdate() {
 		focusArea.Update (target.collider.bounds);
@@ -55,6 +60,9 @@ public class CameraFollow : MonoBehaviour {
 		Gizmos.color = new Color (1, 0, 0, .5f);
 		Gizmos.DrawCube (focusArea.centre, focusAreaSize);
 	}
+
+
+
 	
 	struct FocusArea {
 		public Vector2 centre;
