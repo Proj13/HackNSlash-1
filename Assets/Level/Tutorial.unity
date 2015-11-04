@@ -1167,6 +1167,7 @@ GameObject:
   - 114: {fileID: 775912595}
   - 114: {fileID: 775912594}
   - 95: {fileID: 775912600}
+  - 114: {fileID: 775912601}
   m_Layer: 8
   m_Name: sackman_sprite
   m_TagString: Player
@@ -1293,7 +1294,7 @@ Animator:
   m_GameObject: {fileID: 775912593}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 400d7604552d481498e8f5ff6beb78ce, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1301,6 +1302,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &775912601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 775912593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb52ad088c931d4daefec8d1dda4aa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &865406009
 GameObject:
   m_ObjectHideFlags: 0
