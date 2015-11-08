@@ -11,7 +11,7 @@ public class CountDown : MonoBehaviour {
 	
 	void OnGUI(){
 		if(timeRemaining > 0){
-			GUI.Label(new Rect(600, 100, 200, 100), 
+			GUI.Label(new Rect(Screen.width/2.06f, Screen.height/72f, 200, 100), 
 			          "Time Remaining : "+timeRemaining);
 		}
 		else{
