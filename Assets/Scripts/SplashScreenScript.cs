@@ -16,5 +16,12 @@ public class SplashScreenScript : MonoBehaviour {
 		float fadeTime = GameObject.Find ("ScreenFader").GetComponent<FadingScript> ().BeginFade (1);
 		yield return new WaitForSeconds (fadeTime);
 		Application.LoadLevel (Application.loadedLevel+1);
+
+	}
+
+	void Update(){
+		if (Input.GetKey (KeyCode.Escape)) {
+			Application.LoadLevel (Application.loadedLevel+1);
+		}
 	}
 }
