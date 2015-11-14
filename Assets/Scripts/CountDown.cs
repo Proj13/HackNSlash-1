@@ -11,9 +11,9 @@ public class CountDown : MonoBehaviour {
 	}
 	
 	void OnGUI(){
-		textStyle.normal.textColor = Color.white;
-		textStyle.font = (Font)Resources.Load ("CHILLER");
-		textStyle.fontSize = 24;
+		//textStyle.normal.textColor = Color.white;
+		//textStyle.font = (Font)Resources.Load ("CHILLER");
+		//textStyle.fontSize = 24;
 
 		if(timeRemaining > 0){
 			GUI.Label(new Rect(Screen.width/2.06f, Screen.height/72f, 200, 100), 
